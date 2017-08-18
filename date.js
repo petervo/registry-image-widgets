@@ -59,9 +59,16 @@ angular.module('registryUI.date', [])
     "MomentLib",
     "dateRefreshMinute",
     function(momentLib) {
+        if (typeof(momentLib) === 'function') {
+            momentLib.createFromInputFallback = function(config) {
+                config._d = new Date(config._i);
+            };
+        }
+
         function dateRelative(timestamp) {
             if (!timestamp)
                 return timestamp;
+
             return momentLib(timestamp).fromNow();
         }
 
