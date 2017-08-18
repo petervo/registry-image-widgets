@@ -1,8 +1,6 @@
 Registry Image Widgets
 ========================
 
-Demo: https://rawgit.com/openshift/registry-image-widgets/master/index.html
-
 This provides rendering of Image and ImageStream objects as found in the
 Openshift Kubernetes distribution and related Registry. If these types of objects
 make their way into upstream Kubernetes, we should adapt the widgets here for
