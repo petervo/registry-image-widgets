@@ -87,3 +87,10 @@ Contributing
 
 Before committing any changes run the `webpack` task to make sure files have been
 updated, and include the updated file in your commit.
+
+Testing
+-------
+
+To install test dependencies, run ```npm install```.
+
+To run tests use ```karma start```. This will run the test suite once with results displayed. Other options are available, such as ```--no-single-run``` to have tests run continuously with each file change (convenient for test development).
