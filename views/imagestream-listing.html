@@ -28,8 +28,8 @@
                 <span ng-if="tag_count > 4" translate-n="tag_count - 4" translate translate-plural="and {{ $count }} others">and {{ $count }} other</span>
             </td>
             <td>
-                  <span ng-if="!imageStream.status.dockerImageRepository && !imageStream.spec.dockerImageRepository"><em translate>unknown</em></span>
-                  <span ng-if="imageStream.status.dockerImageRepository || imageStream.spec.dockerImageRepository">{{imageStream.status.dockerImageRepository || imageStream.spec.dockerImageRepository}}</span>
+                  <span ng-if="!imagestream.status.dockerImageRepository && !imagestream.spec.dockerImageRepository"><em translate>unknown</em></span>
+                  <span ng-if="imagestream.status.dockerImageRepository || imagestream.spec.dockerImageRepository">{{imagestream.status.dockerImageRepository || imagestream.spec.dockerImageRepository}}</span>
             </td>
         </tr>
         <tr class="listing-ct-panel" ng-if="imagestreamExpanded(imagestream)">
